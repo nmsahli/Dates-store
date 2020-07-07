@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style the header */
+
+header {
+    background: url(img/الخلفية.jpg);
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    /* Style theusing clip-path though polygons */
+    clip-path: polygon(75% 0%, 100% 50%, 100% 100%, 51% 100%, 25% 50%, 0% 0%);
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+
+nav {
+    float: right;
+    width: 20%;
+    height: 300px;
+    /* only for demonstration, should be removed */
+    background: rgb(189, 127, 70);
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+/* remove the underline from all hyperlinks*/
+
+a {
+    text-decoration: none;
+}
+
+
+/* Style the list inside the menu */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: right;
+    padding: 20px;
+    width: 70%;
+    height: 300px;
+}
+
+
+/* Clear floats after the columns */
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Style the footer */
+
+footer {
+    background-color: rgb(189, 127, 70);
+    padding: 2%;
+    text-align: center;
+    color: white;
+}
+
+.products {
+    width: 100%;
+    /*  using clip-path though circles */
+    clip-path: circle(50% at 50% 50%);
+}
+
+.logo {
+    /* using clip-path though ellipses */
+    clip-path: ellipse(50% 30% at 50% 50%);
+    width: 280px;
+    height: 280px;
+}
